@@ -1,0 +1,12 @@
+
+
+#people {
+	height: 800px;
+	width: 800px;
+	background: #fc2;
+}
+
+.person {
+	position: absolute;
+	border-radius: 50px;
+}
