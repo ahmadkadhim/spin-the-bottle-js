@@ -28,16 +28,11 @@
 		// console.log(plength);
 		var people = document.getElementById("people");
 		var persons = document.getElementsByClassName("person");
-		for (var i=0; i<persons.length; i++) {
-			var person = persons[i];
-			person.style.background = "#fc2 url('jack.jpg') no-repeat 50% 50%";
-			person.style.height = "100px";
-			person.style.width = "100px";
-		};
 
 		var position;
 		function PolygonPosition(n, x, y, r) {
 			for (i = 0; i < n; i++) {
+				// courtesy of stackoverflow
 	  			positionX = (x + r * Math.cos(2 * Math.PI * i / n));
 	  			positionY = (y + r * Math.sin(2 * Math.PI * i / n));
 				var person = persons[i];
